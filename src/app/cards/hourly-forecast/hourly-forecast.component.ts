@@ -11,7 +11,7 @@ import { Store, select } from '@ngrx/store'
 })
 export class HourlyForecastComponent implements OnInit {
 
-  data: WeatherData;
+  // data: WeatherData;
   displayedColumns: string[] = ['Time', 'Temp', 'Wind', 'Condition'];
 
   data$: Observable<WeatherData>
@@ -21,6 +21,8 @@ export class HourlyForecastComponent implements OnInit {
 
 
     this.data$ = this.store.pipe(select(selectWeather));
-    console.log("hourlyforcast data after", this.data$);
+    this.data$.subscribe(res => console.log("hourly forcast", res));
+
+    // console.log("hourlyforcast data after", this.data.hourlyForecast);
   }
 }
