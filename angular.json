@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "goose-weather": {
+    "ngrx-weather": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "aot": true,
-            "outputPath": "dist/goose-weather",
+            "outputPath": "dist/ngrx-weather",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "goose-weather:build"
+            "browserTarget": "ngrx-weather:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "goose-weather:build:production"
+              "browserTarget": "ngrx-weather:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "goose-weather:build"
+            "browserTarget": "ngrx-weather:build"
           }
         },
         "test": {
@@ -108,7 +108,7 @@
         }
       }
     },
-    "goose-weather-e2e": {
+    "ngrx-weather-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "goose-weather:serve"
+            "devServerTarget": "ngrx-weather:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "goose-weather:serve:production"
+              "devServerTarget": "ngrx-weather:serve:production"
             }
           }
         },
@@ -137,7 +137,7 @@
       }
     }
   },
-  "defaultProject": "goose-weather",
+  "defaultProject": "ngrx-weather",
   "cli": {
     "defaultCollection": "@ngrx/schematics",
     "analytics": false

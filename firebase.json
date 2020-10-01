@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/goose-weather",
+    "public": "dist/ngrx-weather",
     "ignore": [
       "firebase.json",
       "**/.*",
